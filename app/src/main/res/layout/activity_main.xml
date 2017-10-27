@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iotledcontroll.MainActivity">
+
+
+    <Button
+        android:id="@+id/btoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="OFF"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btoff"
+        android:layout_marginTop="20dp"
+        android:background="#000"
+        android:text="ON"
+        android:textColor="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bton"
+        android:layout_alignStart="@+id/bton"
+        android:layout_below="@+id/bton"
+        android:layout_marginTop="40dp"
+        android:text="blink"
+        android:textColor="#FFFFFF"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blink">
+
+
+        <EditText
+            android:id="@+id/in_date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="82dp" />
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/in_date"
+            android:layout_toEndOf="@+id/in_date"
+            android:layout_toRightOf="@+id/in_date"
+            android:text="SELECT DATE" />
+
+        <EditText
+            android:id="@+id/in_time"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/in_date" />
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_date"
+            android:layout_alignStart="@+id/btn_date"
+            android:layout_below="@+id/btn_date"
+            android:text="SELECT TIME" />
+        <Button
+            android:id="@+id/bt_timer"
+            android:layout_below="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Timer"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
